@@ -1,22 +1,29 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
     background-color: rgb(238, 238, 238);
     text-align: center;
     font-family: 'Livvic', sans-serif;
+    height: 100%;
 }
 
-#header1 {
-    font-size: 500px;
-    text-align: center;
-    font-weight: normal;
+  p {
+    margin: 10px 100px 10px 100px
+  }
+
+#container {
+  min-height: 100%;
 }
 
-#header2 {
-    font-size: 50px;
-    text-align: center;
-    font-weight: normal;
+#main {
+  overflow: auto;
+  padding-bottom: 100px;
 }
 
-/* NAVIGATION BAR */
+/* NAV BAR */
   ul {
     list-style-type: none;
     margin: 0;
@@ -44,27 +51,107 @@ body {
     background-color: #4CAF50;
   }
 
+  /* HOME AND MAIN BLOG PAGE */
+  .heading1 {
+    font-size: 80px;
+    text-align: center;
+    font-weight: bolder;
+    color:  rgb(64, 77, 67);
+    padding: 30p 10px 30px 10px;
+    margin-top: 50px;
+  }
+
+  .heading2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: normal;
+    color:  rgb(64, 77, 67);
+    margin-bottom: 20px;
+}
+
+.heading3 {
+  font-size: 16pt;
+  text-align: center;
+  font-weight: normal;
+  color:  rgb(64, 77, 67);
+  margin: 0px 60px 20px 60px;
+}
+
+.blog-page {
+  margin: 2rem 2rem;
+  line-height: 3.5rem;
+}
+
+
+/* BLOG POSTS */
+.spacing {
+  line-height: 16pt;
+}
+
+.blog-title1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+  color:  rgb(64, 77, 67);
+  padding: 30p 10px 30px 10px;
+  margin-top: 50px;
+}
+
+.blog-title2 {
+  font-size: 16pt;
+  text-align: center;
+  font-weight: bold;
+  color:  rgb(64, 77, 67);
+  margin: 20px 0px 20px 0px;
+}
+
+.blog-title3 {
+  font-size: 16pt;
+  text-align: center;
+  font-weight: normal;
+  color:  rgb(64, 77, 67);
+  margin: 20px 30px 20px 30px;
+}
+
 /* IMAGES */
 .ferns2-img {
-    width: 350px;
+    width: 370px;
     height: 400px;
     float: auto;
     padding: 30px 20px 30px 20px;
 }
+
 .ferns-img {
-  width: 350px;
-  height: 400px;
-  float: middle;
-  padding: 30px 20px 30px 20px; 
+    width: 370px;
+    height: 400px;
+    float: middle;
+    padding: 30px 20px 30px 20px; 
 }
 
 .ferns3-img {
-    width: 350px;
+    width: 370px;
     height: 400px;
     float: auto;
     padding: 30px 20px 30px 20px;
 }
 
+  .css-class {
+    margin: 20px 70px 20px 20px;
+  }
+
+  .css-id {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .html-class {
+    margin: 20px 0px 20px 100px;
+  }
+
+  .html-id {
+    margin: 0px 170px 40px 65px;
+  }
+    
 /* FOOTER */
 #github-logo {
     display: center;
@@ -72,16 +159,17 @@ body {
     height: 40px;
     padding: 10px;
     margin: 10px;
+    position: 10px;
 }
 
 #blog-footer {
     background-color: rgb(64, 77, 67);
     text-align: center;
-    position: fixed; 
-    height: 80px;
-    left: 0px;
-    bottom: 0px;
+    position: relative; 
+    height: 100px;
+    margin-top: -100px;
     width: 100%;
+    clear: both;
   }
 
   

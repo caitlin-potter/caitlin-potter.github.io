@@ -6,27 +6,57 @@
           <meta charset="UFT-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <!-- CSS stylesheets -->
-          <link href="C:\Users\OEM\Desktop\Dev Academy\EDA Repos\website\caitlin-potter.github.io\styles\main.css" rel="stylesheet" type="text/css">
+          <link href="../styles/main.css" rel="stylesheet" type="text/css">
           <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet"> 
     </head>
-z
+    
     <body>
 
         <div class="nav-bar"> 
             <nav>
                 <ul>
-                <li><a href="C:\Users\OEM\Desktop\Dev Academy\EDA Repos\website\caitlin-potter.github.io\index.html">HOME</a></li>
-                <li><a href="C:\Users\OEM\Desktop\Dev Academy\EDA Repos\website\caitlin-potter.github.io\blog\blog.html">BLOG</a></li>    
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="blog.html">BLOG</a></li>    
                 </ul>
             </nav>    
         </div>
+        
+        <div id="container">
+        <div id="main">    
+            <section class="blog-post">
+            <h1 class="blog-title1">What are the best practices associated with using classes vs. ids?</h1>
+            <h3 class="blog-title3"><em>14 September 2019</em></h3>
 
+            <p><strong>Classes</strong> and <strong>IDs</strong> are selectors and act as hooks so that you can assign HTML elements to them to make them more specific. 
+            They are very important and we rely on them every day to do the styling and page manipulation that we need to do.</p>
+
+            <p>ID's are <strong>unique.</strong> Each element can only have one ID and each page can only have one element with that ID. This is important to remember as your code will
+            will not pass validation if you use the same ID on more than one element.</p>
+
+            <p>Classes are <strong>not</strong> unique. You can use the same class on multiple elements, and you can use multiple classes on the same element.</p>
+
+            <p>In the CSS, a class selector is a name preceded by a <strong>full stop (“.”)</strong> and an ID selector is a name preceded by a <strong>hash character (“#”).</strong></p>
+            <br>
+            <p>The images below show examples of what a <strong>class (.ferns3-img)</strong> and an <strong>ID (#blog-footer)</strong> might look like in a main css file:</p>
+            
+            <img class="css-class" src="../images/CSS-eg-class.PNG">
+            <img class="css-id" src="../images/CSS-eg-ID.PNG">
+
+            <p>The images below show examples of what a <strong>class (class="ferns3-img")</strong> and an <strong>ID (id="blog-footer")</strong> might look like in an HTML file:</p>
+
+            <img class="html-class" src="../images/HTML-eg-class.PNG">
+            <img class="html-id" src="../images/HTML-eg-ID.PNG">
+            <br>
+            <br>
+        </div>
+        </div>
     </body>
-
+    
+    </section>
         <div>
             <footer id="blog-footer">
-                <a href="https://github.com/caitlin-potter" target="_blank"><img id="github-logo" src="C:\Users\OEM\Desktop\Dev Academy\EDA Repos\website\caitlin-potter.github.io\images\GitHub-logo.png" alt="Github-logo"></a>    
+                <a href="https://github.com/caitlin-potter" target="_blank"><img id="github-logo" src="../images/GitHub-logo.png" alt="Github-logo"></a>    
              </footer>
-            </div>
+        </div>
         
 </html>
